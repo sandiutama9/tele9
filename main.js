@@ -6,8 +6,8 @@ function kirimPesan() {
 
     var gabungan = 'Nama%3A%0A' + nama.value + '%0AEmail%3A%0A' + email.value + '%0APesan%3A%0A' + pesan.value;
 
-    var token = 'TOKEN_BOT_KAMU'; // Ganti dengan token bot yang kamu buat
-    var grup = 'CHAT_ID_GRUP_KAMU'; // Ganti dengan chat id dari bot yang kamu buat
+    var token = '5941934417:AAHpA0NTtLqPtQj4ePV-3GrvD_F2u967Z4I'; // Ganti dengan token bot yang kamu buat
+    var grup = '677083459'; // Ganti dengan chat id dari bot yang kamu buat
 
     $.ajax({
         url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${grup}&text=${gabungan}&parse_mode=html`,
